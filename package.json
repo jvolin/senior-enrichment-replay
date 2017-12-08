@@ -1,16 +1,18 @@
 {
-  "name": "Project Name",
+  "name": "aircraftfans",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "webpack -w & nodemon main"
+    "start:dev": "webpack -w & nodemon main",
+    "seed": "node seed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.17.1",
     "body-parser": "^1.18.2",
     "chalk": "^2.3.0",
     "express": "^4.16.2",
@@ -20,9 +22,11 @@
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
+    "redux-devtools": "^3.4.1",
+    "redux-devtools-extension": "^2.13.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
-    "sequelize": "^4.15.0"
+    "sequelize": "^4.27.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

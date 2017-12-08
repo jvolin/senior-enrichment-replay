@@ -4,3 +4,20 @@
 	// Exporting all models from here seems like a good idea!
 
 // This is also probably a good place for you to set up your associations
+
+const Sequelize = require('sequelize');
+const db = require('../_db');
+const Country = require('./country');
+const Aircraft = require('./aircraft')
+
+Country.hasMany(Aircraft);
+Aircraft.belongsTo(Country);
+//Country.belongsToMany(Aircraft, {through: 'countyAircraft'})
+
+module.exports = {
+	Country: Country,
+	Aircraft: Aircraft,
+	db
+}
+
+//Country will getAircrafts setAircraft addAircraft addAircrafts

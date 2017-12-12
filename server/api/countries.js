@@ -39,7 +39,7 @@ router.post('/', function (req, res, next) {
     .catch(next);
 });
 
-//update a country
+//update a
 
 
 //delete a country and all associated aircrafts

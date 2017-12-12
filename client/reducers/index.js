@@ -13,13 +13,15 @@
 
 
 import {combineReducers } from 'redux';
-import countriesReducer from './countries'
-import aircraftsReducer from './aircrafts'
+import countriesReducer from './countries';
+import aircraftsReducer from './aircrafts';
+import topCountriesReducer from './topCountries';
 
 
 const mainReducer = combineReducers({
   countries: countriesReducer,
-  aircrafts: aircraftsReducer
+  aircrafts: aircraftsReducer,
+  topCountries: topCountriesReducer
 })
 
 export default mainReducer

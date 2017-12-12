@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 
 function TopCountries (props) {
-
+console.log(props)
   return (
     <div>
       <h1>Top Five Countries</h1>
